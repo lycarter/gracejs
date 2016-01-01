@@ -18,7 +18,7 @@ h1
 	color: #31567b;
 	font-family: 'Roboto', sans-serif;
 	font-size: 48px;
-	text-align: center;		
+	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -40,9 +40,21 @@ h3
 	font-size: 26px;
 	margin-top: 4px;
 	margin-bottom: 8px;
- 	
+
   	color: #092A4A;
 }
+
+span
+{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 26px;
+	margin-top: 4px;
+	margin-bottom: 8px;
+
+		color: #d37d000;
+}
+.bold {color: #c37000;}
 
 p {
   margin: 0 0 20px 0;

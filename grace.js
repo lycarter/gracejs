@@ -7,7 +7,7 @@
  *
  * Date: 2015-01-01
  */
- 
+
 // Pardon me, I've never coded pure Javascript
 // This will be interesting.
 
@@ -15,12 +15,15 @@ var GRACE = "1031149799101";
 var BIRTHDAY = 1/1;
 
 var img = document.createElement('img');
-var logger = [];
+var loggerG = [];
 var position = -2000;
 var graceGo;
-var activateBtn = document.getElementById('activate');
+var activateBtn = document.getElementById('activateG');
 
-img.src = "http://lcarter.mit.edu/gracejs/thegal.png";
+howGreatIsShe = 4;
+whichGal = Math.floor((Math.random()*howGreatIsShe)+1);
+console.log(whichGal);
+img.src = "thegal-" + whichGal + ".png";
 img.style.height = "100%";
 img.style.position = "fixed";
 img.style.left = position + "px";
@@ -29,11 +32,10 @@ img.style.zIndex = 2015;
 
 document.addEventListener('keypress', function (e) {
   console.log('sup');
-  console.log(e.which)
-  logger += '' + e.which;
-  if (GRACE.indexOf(logger) != 0) {
-    logger = "";
-  } else if (GRACE === logger){
+  loggerG += '' + e.which;
+  if (GRACE.indexOf(loggerG) != 0) {
+    loggerG = "";
+  } else if (GRACE === loggerG){
     console.log('Go, Grace!');
     graceGo = setInterval(moveTheGal, 24);
   }
